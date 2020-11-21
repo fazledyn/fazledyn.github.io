@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HashTable Implementation And A Few Findings"
+title:  "HashTable Implementation & Few Findings"
 categories: [ programming ]
 image: assets/images/8.jpg
 tags: [ sticky, hashing, programming ]
@@ -8,6 +8,7 @@ lang: en
 ---
 
 ### What is a hash table ?
+
 Hash table (also, hash map) is a data structure that basically maps keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the corresponding value can be found. A hash table supports three basic operations- Search, Delete & Insert. All of them require having a complexity of O(1).
 
 In our assignment, we were told to store a key-value pair in the hash table. The key will be string and the value, which is an integer will be associated with it. There should be three basic operation on the hash table- Search, Delete & Insert. Except insert, search and delete will be based on the key.
@@ -114,13 +115,13 @@ u64 auxHashFunc(string s) {
 ***
 #### Double Hashing Method
 This method involves two hash function used as:
-`doubleHash(s, i) = (hashFunc(s) + i*auxHash(s)) % TABLE_SIZE`
+`doubleHash(s,i) = (hashFunc(s) + i*auxHash(s)) % TABLE_SIZE`
 
 Any of the basic hash functions can be used as the first hash function. Note that the value of i increases on each iterations until the element finds an empty space in the hash table. In my opinion, it's just a superset of [linear probing method](https://en.wikipedia.org/wiki/Linear_probing). The only difference is that the offset value involves the use of another hash function.
 
 #### Custom Probing Method
 This method is of the following form:
-`customProbe(s, i) = (hashFunc(s) + C1*i*auxHash(s) + C2*i*i) % TABLE_SIZE`
+`customProbe(s,i) = (hashFunc(s) + C1*i*auxHash(s) + C2*i*i) % TABLE_SIZE`
 
 Only difference here is the constants C1, C2 and the additional part of i^2. The offset value found through this method is usually more than the double hashing method. The location for the hash_index are more sparse, more uniformly distributed throughout the hash table. From observation, setting C1, C2's value as single digit prime makes it more efficient as well as fast. This however is also a superset of [quadratic probing method](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/).
 
@@ -136,9 +137,6 @@ It is quite evident that the additional hash functions (auxHash, customProbeHash
 
 On the other hand, if we have a hash table size of a prime number, all cells can be traversed eventually. Which is the most important point while constructing a hash table with probing operation.
 
-*You can find my HashTable implementation in C++ (here)[]*
+**You can find my HashTable implementation in C++ [here](https://github.com/fazledyn/L2T2_Offlines/tree/master/CSE%20208/Offline8%20-%20Hashtable)**
 
-**References:**
-- (Aozturk's Medium Blog)[https://aozturk.medium.com/simple-hash-map-hash-table-implementation-in-c-931965904250]
-- (GeeksForGeeks)[https://www.geeksforgeeks.org/double-hashing/]
-- (Damn Fast Hash Table)[http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-memory-footprints/]
+**References:** [Aozturk's Medium Blog](https://aozturk.medium.com/simple-hash-map-hash-table-implementation-in-c-931965904250), [GeeksForGeeks](https://www.geeksforgeeks.org/double-hashing/), [Damn Fast Hash Table](http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-memory-footprints/)

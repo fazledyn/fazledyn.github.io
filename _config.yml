@@ -3,6 +3,7 @@ name: 'Ataf Fazledin Ahamed'
 description: 'CS Undergraduate'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
+#baseurl: ''
 baseurl: 'https://fazledyn.github.io'
 mailchimp-list: 'https://gmail.us7.list-manage.com/subscribe/post?u=1757137455ba066299ec52a7a&amp;id=dbee2c6678'
 

@@ -3,7 +3,7 @@ layout: post
 title:  "কোয়ারেন্টিন, বাণিজ্য এবং বাইবেল"
 categories: [ history ]
 image: assets/images/6.jpg
-tags: [ sticky, featured ]
+tags: [ featured ]
 lang: bn
 ---
 

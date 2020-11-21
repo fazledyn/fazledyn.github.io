@@ -866,13 +866,6 @@ article blockquote:before {
     line-height: 1;
 }
 
-article:first-letter {
-    float: left;
-    font-size: 5em;
-    line-height: 1;
-    margin: 0 .2em 0 0;
-    vertical-align: top;
-}
 
 article h1,
 article h2,
