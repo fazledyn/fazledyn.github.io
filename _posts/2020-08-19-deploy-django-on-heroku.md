@@ -20,7 +20,7 @@ Django requires a gunicorn server to serve itself through the wsgi.py file. So y
 Go to Django project’s wsgi.py file.
 
 Add this `os.environ["DJANGO_SETTINGS_MODULE"] = "<PROJ_NAME>.settings"` instead of `os.environ.setdefault('DJANGO_SETTINGS_MODULE',**'<PROJ_NAME>.settings')`
-Make sure the Procfile has the following line (only): `web: gunicorn backend.wsgi --log-file -`
+Make sure the Procfile has the following line (only): `web: gunicorn <PROJ_NAME>.wsgi --log-file -`
 
 The `–log-file –` attribute helps generating logs for gunicorn server. This is where I made most of my mistakes while deploying Django apps.
 If you’re deploying Django in debug mode, add this line to the end of project’s urls.py file. Otherwise, no need to add this. This is basically for handling media files (not static files)

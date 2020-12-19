@@ -831,9 +831,6 @@ article {
 }
 
 .article-headline {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 3.2rem;
-    font-weight: 400;
     line-height: 1.15;
     color: #222222;
 }
@@ -845,7 +842,8 @@ article img,
 article blockquote,
 article iframed,
 article embed {
-    margin-bottom: 55px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 article blockquote {
@@ -871,17 +869,26 @@ article h1,
 article h2,
 article h3,
 article h4,
-article h5,
-article h6,
 article .h1,
 article .h2,
 article .h3,
-article .h4,
+article .h4 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+article h5,
+article h6,
 article .h5,
 article .h6 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 .alertbar {
@@ -1042,21 +1049,25 @@ div.a2a_full_footer {
 .profile {
     vertical-align: middle;
     width: 80%;
-    font-family: 'SF UI Display';
+    font-family: 'SF Pro Display';
+    font-weight: 300;
     margin: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
     max-width: 60%;
+    font-size: 18px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .profile h2 {
-    font-weight: 800;
+    font-weight: 300;
 }
 
 .profile b {
     color: #038f6a;
-    font-weight: inherit;
+    font-weight: 600;
 }
 
 .social {
@@ -1079,4 +1090,8 @@ div.a2a_full_footer {
     text-align: center;
     padding: 8px;
     text-decoration: none;
+}
+
+.spacer {
+    height: 150px;
 }
