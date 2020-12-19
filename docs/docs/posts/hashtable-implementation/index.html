@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>HashTable Implementation & Few Findings | Ataf Fazledin Ahamed</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HashTable Implementation & Few Findings | Ataf Fazledin Ahamed</title>
 
-      <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>HashTable Implementation &amp; Few Findings | Ataf Fazledin Ahamed</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="HashTable Implementation &amp; Few Findings" />
@@ -23,73 +22,63 @@
 <!-- End Jekyll SEO tag -->
 
 
-      <link rel="shortcut icon" type="image/x-icon" href="https://fazledyn.github.io/assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://fazledyn.github.io/assets/images/favicon.ico">
 
-      <!-- Font Awesome Icons -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-      <!-- Google Fonts-->
-      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
-      <!-- Bootstrap Modified -->
-      <link rel="stylesheet" href="https://fazledyn.github.io/assets/css/main.css">
+    <!-- Bootstrap Modified -->
+    <link rel="stylesheet" href="https://fazledyn.github.io/assets/css/main.css">
 
-      <!-- Theme Stylesheet -->
-      <link rel="stylesheet" href="https://fazledyn.github.io/assets/css/theme.css">
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" href="https://fazledyn.github.io/assets/css/theme.css">
 
-      <!-- Pygments Highlighting -->
-      <link href="https://fazledyn.github.io/assets/css/pygments.css" rel="stylesheet">
+    <!-- Pygments Highlighting -->
+    <link href="https://fazledyn.github.io/assets/css/pygments.css" rel="stylesheet">
 
-      <!-- Own Fonts -->
-      <link href="https://fazledyn.github.io/assets/css/fonts.css" rel="stylesheet">
+    <!-- Own Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-      <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-      <!-- This goes before </head> closing tag, Google Analytics can be placed here --> 
+    <!-- This goes before </head> closing tag, Google Analytics can be placed here --> 
 
 
 </head>
 
 <body class="">
 
-      <!-- Navbar -->
-      <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <div class="container">
+    <!-- Navbar -->
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="https://fazledyn.github.io/index.html" style="font-family: 'Poppins', sans-serif;">
+                Ataf Fazledin Ahamed
+            </a>
 
-                  <a class="navbar-brand" href="https://fazledyn.github.io/index.html"
-                        style="font-family: 'Poppins', sans-serif;">
-                        Ataf Fazledin Ahamed
-                  </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                        data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <div class="navbar-collapse collapse" id="navbarColor01">
-                        <ul class="navbar-nav ml-auto d-flex align-items-center"
-                              style="font-family: 'Poppins', sans-serif;">
-                              <!--  Replace menu links here -->
+            <div class="navbar-collapse collapse" id="navbarColor01">
+                <ul class="navbar-nav ml-auto d-flex align-items-center" style="font-family: 'Poppins', sans-serif;">
+                <!--  Replace menu links here -->
 
 <li class="nav-item">
 <a class="nav-link" href="https://fazledyn.github.io/">Posts</a>
@@ -112,77 +101,91 @@
 
 -->
 
-                        </ul>
-                  </div>
-
+                </ul>
             </div>
-      </nav>
 
-      <!-- Search Results -->
-      <div id="lunrsearchresults">
-            <ul class="mb-0"></ul>
-      </div>
+        </div>
+    </nav>
 
-      <!-- Content -->
-      <main role="main" class="site-content">
-            <div class="container">
-      <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-            <div class="h-100 tofront">
-                  <div
-                        class="row  justify-content-between ">
-                        <div
-                              class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
-                              <p class="text-uppercase font-weight-bold">
-                                    <span class="catlist">
-                                          
-                                          <a class="sscroll text-danger"
-                                                href="https://fazledyn.github.io/categories.html#programming"
-                                                style="font-family: 'Work Sans', sans-serif;">
-                                                programming
-                                          </a>
-                                          <span class="sep">, </span>
-                                          
-                                    </span>
-                              </p>
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
 
-                              
-                              <h1 class="display-4 mb-4 article-headline"
-                                    style="font-family: 'SF Pro Display', sans-serif; font-weight: 300;">
-                                    HashTable Implementation & Few Findings
-                              </h1>
-                              
+    <!-- Content -->
+    <main role="main" class="site-content">
+        <div class="container">
+  <div
+    class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative"
+  >
+    <div class="h-100 tofront">
+      <div
+        class="row  justify-content-between "
+      >
+        <div
+          class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center"
+        >
+          <p class="text-uppercase font-weight-bold">
+            <span class="catlist">
+              
+              <a
+                class="sscroll text-danger"
+                href="https://fazledyn.github.io/categories.html#programming"
+                style="font-family: 'Work Sans', sans-serif;"
+              >
+                programming
+              </a>
+              <span class="sep">, </span>
+              
+            </span>
+          </p>
 
-                              <div class="d-flex align-items-center">
-                                    <span class="text-muted d-block mt-1" style="font-family: 'Work Sans', sans-serif;">
-                                          Nov 21, 2020 · <span class="reading-time">
+          
+          <h1
+            class="display-4 mb-4 article-headline"
+            style="font-family: 'Poppins', sans-serif; font-weight: 800;"
+          >
+            HashTable Implementation & Few Findings
+          </h1>
+          
+
+          <div class="d-flex align-items-center">
+            <span
+              class="text-muted d-block mt-1"
+              style="font-family: 'Work Sans', sans-serif;"
+            >
+              Nov 21, 2020 · <span class="reading-time">
   
   
     8 mins read
   
 </span>
     
-                                    </span>
-                              </div>
-                        </div>
-                        
-                        <div class="col-md-6 pr-0 align-self-center">
-                              <img class="rounded" src="https://fazledyn.github.io/assets/images/8.jpg" alt="HashTable Implementation & Few Findings">
-                        </div>
-                        
-                  </div>
-            </div>
+            </span>
+          </div>
+        </div>
+        
+        <div class="col-md-6 pr-0 align-self-center">
+          <img class="rounded" src="https://fazledyn.github.io/assets/images/8.jpg"
+          alt="HashTable Implementation & Few Findings">
+        </div>
+        
       </div>
+    </div>
+  </div>
 </div>
 
 <div class="container-lg pt-4 pb-4">
-      <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8">
-                  <!-- Article -->
+  <div class="row justify-content-center">
+    <div class="col-md-12 col-lg-8">
+      <!-- Article -->
 
-                  
-                  <article class="article-post"
-                        style="font-family: 'Merriweather', sans-serif; text-align: justify; font-weight: 400; font-size: 17.5px;">
-                        <h3 id="what-is-a-hash-table-">What is a hash table ?</h3>
+      
+      <article
+        class="article-post"
+        style="font-family: 'Merriweather', sans-serif; text-align: justify; font-weight: 400; font-size: 17.5px;"
+      >
+        <h3 id="what-is-a-hash-table-">What is a hash table ?</h3>
 
 <p>Hash table (also, hash map) is a data structure that basically maps keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the corresponding value can be found. A hash table supports three basic operations- Search, Delete &amp; Insert. All of them require having a complexity of O(1).</p>
 
@@ -301,113 +304,138 @@
 
 <p><strong>References:</strong> <a href="https://aozturk.medium.com/simple-hash-map-hash-table-implementation-in-c-931965904250">Aozturk’s Medium Blog</a>, <a href="https://www.geeksforgeeks.org/double-hashing/">GeeksForGeeks</a>, <a href="http://www.idryman.org/blog/2017/05/03/writing-a-damn-fast-hash-table-with-tiny-memory-footprints/">Damn Fast Hash Table</a></p>
 
-                  </article>
-                  
+      </article>
+      
 
-                  <!-- Tags -->
-                  <div class="mb-4">
-                        <span class="taglist">
-                              
-                              <a class="sscroll btn btn-light btn-sm font-weight-bold"
-                                    href="https://fazledyn.github.io/tags.html#sticky"
-                                    style="font-family: 'Merriweather', sans-serif;">sticky</a>
-                              
-                              <a class="sscroll btn btn-light btn-sm font-weight-bold"
-                                    href="https://fazledyn.github.io/tags.html#hashing"
-                                    style="font-family: 'Merriweather', sans-serif;">hashing</a>
-                              
-                              <a class="sscroll btn btn-light btn-sm font-weight-bold"
-                                    href="https://fazledyn.github.io/tags.html#programming"
-                                    style="font-family: 'Merriweather', sans-serif;">programming</a>
-                              
-                        </span>
-                  </div>
-
-                  <!-- Mailchimp Subscribe Form -->
-                  
-                  <div class="border p-5 bg-lightblue">
-                        <div class="row justify-content-between">
-                              <div class="col-md-6 mb-2 mb-md-0">
-                                    <h5 class="font-weight-bold">Join Newsletter</h5>
-                                    Get the latest posts right in your inbox. We never spam!
-                              </div>
-                              <div class="col-md-6">
-                                    <div class="row">
-                                          <form action="https://gmail.us7.list-manage.com/subscribe/post?u=1757137455ba066299ec52a7a&amp;id=dbee2c6678" method="post"
-                                                name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100"
-                                                target="_blank" novalidate>
-                                                <div class="mc-field-group">
-                                                      <input type="email" placeholder="Enter e-mail address"
-                                                            name="EMAIL" class="required email form-control w-100"
-                                                            id="mce-EMAIL" autocomplete="on" required />
-
-                                                      <button type="submit" value="Subscribe" name="subscribe"
-                                                            class="heart btn btn-success btn-block w-100 mt-2">
-                                                            Subscribe
-                                                      </button>
-                                                </div>
-                                          </form>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  
-            </div>
+      <!-- Tags -->
+      <div class="mb-4">
+        <span class="taglist">
+          
+          <a
+            class="sscroll btn btn-light btn-sm font-weight-bold"
+            href="https://fazledyn.github.io/tags.html#sticky"
+            style="font-family: 'Merriweather', sans-serif;"
+            >sticky</a
+          >
+          
+          <a
+            class="sscroll btn btn-light btn-sm font-weight-bold"
+            href="https://fazledyn.github.io/tags.html#hashing"
+            style="font-family: 'Merriweather', sans-serif;"
+            >hashing</a
+          >
+          
+          <a
+            class="sscroll btn btn-light btn-sm font-weight-bold"
+            href="https://fazledyn.github.io/tags.html#programming"
+            style="font-family: 'Merriweather', sans-serif;"
+            >programming</a
+          >
+          
+        </span>
       </div>
+
+      <!-- Mailchimp Subscribe Form -->
+      
+      <div class="border p-5 bg-lightblue">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <h5 class="font-weight-bold">Join Newsletter</h5>
+            Get the latest posts right in your inbox. We never spam!
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <form
+                action="https://gmail.us7.list-manage.com/subscribe/post?u=1757137455ba066299ec52a7a&amp;id=dbee2c6678"
+                method="post"
+                name="mc-embedded-subscribe-form"
+                class="wj-contact-form validate w-100"
+                target="_blank"
+                novalidate
+              >
+                <div class="mc-field-group">
+                  <input
+                    type="email"
+                    placeholder="Enter e-mail address"
+                    name="EMAIL"
+                    class="required email form-control w-100"
+                    id="mce-EMAIL"
+                    autocomplete="on"
+                    required
+                  />
+
+                  <button
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    class="heart btn btn-success btn-block w-100 mt-2"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
 <!-- Aletbar Prev/Next -->
 <div class="alertbar">
-      <div class="container">
-            <div class="row prevnextlinks small font-weight-bold">
-                  
-                  <div class="col-md-6 rightborder pl-0">
-                        <a class="text-dark"
-                              href="https://fazledyn.github.io/posts/deploy-django-on-heroku/">
-                              <img height="30px" class="mr-1" src="https://fazledyn.github.io/assets/images/7.jpg" />
-                               Deploying Django 3.1 on Heroku</a>
-                  </div>
-                   
-            </div>
+  <div class="container">
+    <div class="row prevnextlinks small font-weight-bold">
+      
+      <div class="col-md-6 rightborder pl-0">
+        <a class="text-dark" href="https://fazledyn.github.io/posts/deploy-django-on-heroku/"
+          >
+          <img
+            height="30px"
+            class="mr-1"
+            src="https://fazledyn.github.io/assets/images/7.jpg"
+          />
+           Deploying Django 3.1 on Heroku</a
+        >
       </div>
+       
+    </div>
+  </div>
 </div>
-      </main>
+
+    </main>
 
 
-      <!-- Scripts: popper, bootstrap, theme, lunr -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
+    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-      <script src="https://fazledyn.github.io/assets/js/theme.js"></script>
+    <script src="https://fazledyn.github.io/assets/js/theme.js"></script>
 
 
-      <!-- Footer -->
-      <footer class="bg-white border-top p-3 text-muted small">
-            <div class="container">
-                  <div class="row align-items-center justify-content-between">
+    <!-- Footer -->
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">        
+            
+                <div style="font-size: 12px; font-family: 'Poppins';">
+                    Copyright | 2020
+                    <div>
+                        <a href="https://github.com/fazledyn/medusa-theme-jekyll">Get this theme</a>
+                    </div>
+                </div>
 
-                        <div style="font-size: 12px; font-family: 'Poppins';">
-                              Copyright | 2020
-                              <div>
-                                    <a href="https://github.com/fazledyn/medusa-theme-jekyll">Get this theme</a>
-                              </div>
-                        </div>
-
-                        <div style="font-size: 12px; font-family: 'Poppins';">
-                              Mixed & Mastered by <a class="text-dark" target="_blank"
-                                    href="https://www.github.com/fazledyn">fazledyn</a>
-                        </div>
-
-                  </div>
+                <div style="font-size: 12px; font-family: 'Poppins';">
+                    Mixed & Mastered by <a class="text-dark" target="_blank" href="https://www.github.com/fazledyn">fazledyn</a>
+                </div>
+                
             </div>
-      </footer>
+        </div>
+    </footer>
 
-      <!-- All this area goes before </body> closing tag --> 
+    <!-- All this area goes before </body> closing tag --> 
 
 
 </body>
