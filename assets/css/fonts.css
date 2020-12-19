@@ -1,0 +1,20 @@
+@font-face {
+      font-family: 'HelveticaNeue Heavy';
+      src: url('../fonts/Medium-Helvetica-Heavy.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'SF UI Display';
+      src: url('../fonts/sf-ui-display-heavy.otf') format('otf');
+      font-weight: 700;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'SF UI Display';
+      src: url('../fonts/sf-ui-display-medium.otf') format('otf');
+      font-weight: 500;
+      font-style: normal;
+}
