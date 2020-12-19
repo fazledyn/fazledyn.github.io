@@ -869,26 +869,17 @@ article h1,
 article h2,
 article h3,
 article h4,
+article h5,
+article h6,
 article .h1,
 article .h2,
 article .h3,
-article .h4 {
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 24px;
-    font-family: 'Hind Siliguri', sans-serif;
-}
-
-article h5,
-article h6,
+article .h4,
 article .h5,
 article .h6 {
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Hind Siliguri', sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
 }
 
 .alertbar {
