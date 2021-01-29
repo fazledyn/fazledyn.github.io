@@ -1,5 +1,5 @@
 /*! Base16 Monokai Dark by Wimer Hazenberg (http://www.monokai.nl) */
-.highlight, .highlight pre, .highlight table { background: #272822; color: #f9f8f5 }
+.highlight, .highlight pre, .highlight table { background: #272822; color: #f9f8f5; border-radius: 8px; padding-left: 12px; padding-top: 1px; padding-bottom: 1px; }
 .highlight .hll { background-color: #49483e }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #f92672 } /* Error */

@@ -1,6 +1,6 @@
 @font-face {
       font-family: 'HelveticaNeue Heavy';
-      src: url('../fonts/Medium-Helvetica-Heavy.woff') format('woff');
+      src: url('../fonts/helvetica/Medium-Helvetica-Heavy.woff') format('woff');
       font-weight: 700;
       font-style: normal;
 }
@@ -13,42 +13,77 @@
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Light.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Light.otf') format('otf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Regular.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Regular.otf') format('otf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Medium.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Medium.otf') format('otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Semibold.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Semibold.otf') format('otf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Bold.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Bold.otf') format('otf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SF-Pro-Display-Black.otf') format('otf');
+    src: url('../fonts/sf-pro/SF-Pro-Display-Black.otf') format('otf');
     font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('../fonts/sohne/sohne-300-normal.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('../fonts/sohne/sohne-400-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('../fonts/sohne/sohne-400-normal.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('../fonts/sohne/sohne-500-normal.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('../fonts/sohne/sohne-700-normal.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }

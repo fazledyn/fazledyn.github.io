@@ -843,7 +843,7 @@ article blockquote,
 article iframed,
 article embed {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 article blockquote {
@@ -1053,7 +1053,8 @@ div.a2a_full_footer {
 }
 
 .profile h2 {
-    font-weight: 300;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
 }
 
 .profile b {
