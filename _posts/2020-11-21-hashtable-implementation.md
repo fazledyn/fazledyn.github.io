@@ -3,7 +3,7 @@ layout: post
 title:  "HashTable Implementation & Few Findings"
 categories: [ programming ]
 image: assets/images/8.jpg
-tags: [ sticky, hashing, programming ]
+tags: [ hashing, programming ]
 lang: en
 ---
 
