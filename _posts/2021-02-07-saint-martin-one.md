@@ -3,7 +3,6 @@ layout: post
 title:  "গোড়ায় গলদ"
 categories: [ tour ]
 image: assets/images/11.jpg
-tags: [ sticky ]
 lang: bn
 ---
 
