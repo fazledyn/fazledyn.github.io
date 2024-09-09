@@ -11,7 +11,7 @@ During my undergraduate life, I participated in different competitions- CTF, hac
 
 Apart from that, I enjoy contributing to open source projects. **I have 60+ merged pull requests with contribution in notable projects such as- dapr, kubernetes, web3.py, timesketch, django-helpdesk**. You can find a list of them [here.](https://docs.google.com/spreadsheets/d/1BhXlbzaMkDmWduV4PjRDu-BWO8mMlE3szC8ef0PWiZM/) I'm working with OpenSSF and Apache Airflow as a part of my work. Learn more about it [here.](http://localhost:1313/projects/#the-clean-beach-project).
 
-My key interests lies in **systems, network, and software/application security**. I intend to pursue my higher studies in these domains. I would say my interest in these fields during my undergraduate life incited me to participate in the CTFs in the first place.
+My key interests are in **systems, network, and software/application security**. I intend to pursue my higher studies in these domains. I would say my interest in these fields during my undergraduate life incited me to participate in the CTFs in the first place.
 
-During my school and work life, I have had the priviledge to  lead others. I believe I am hard working as well as an adaptive learner.
+During my school and work life, I have had the priviledge to lead others. I believe I am hard working as well as an adaptive learner.
 
