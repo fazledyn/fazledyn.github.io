@@ -1,0 +1,58 @@
+main:
+- name: About
+  url: /
+  weight: 1
+
+- name: Education
+  url: /education/
+  weight: 2
+
+- name: Research
+  url: /research/
+  weight: 3
+
+- name: Projects
+  url: /projects/
+  weight: 4
+
+- name: Experience
+  url: /experience/
+  weight: 5
+
+- name: Skills
+  url: /skills/
+  weight: 6
+
+- name: Achievements
+  url: /achievements/
+  weight: 7
+
+- name: CV
+  url: /cv/
+  weight: 8
+
+social:
+- name: email
+  url: mailto:rabidahamed_AT_gmail_DOT_com
+  weight: 1
+  params:
+    icon: fas fa-envelope
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/fazledyn
+  weight: 2
+  params:
+    icon: fab fa-linkedin
+
+- name: GitHub
+  url: https://github.com/fazledyn
+  weight: 3
+  params:
+    icon: fab fa-github
+
+- name: GitHub2
+  url: https://github.com/fazledyn-or
+  weight: 3
+  params:
+    icon: fab fa-github
+
