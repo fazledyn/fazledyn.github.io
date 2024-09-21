@@ -2,60 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on Ataf Fazledin Ahamed</title>
-    <link>https://fazledyn.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Homepage on Ataf Fazledin Ahamed</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Copyright 2024 Ataf Fazledin Ahamed</copyright>
-    <atom:link href="https://fazledyn.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Achievements</title>
-      <link>https://fazledyn.github.io/achievements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/achievements/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cirt.gov.bd/wp-content/uploads/2022/12/Press-Release-NCD-2022.pdf&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Achieved 3rd position in National Cyber Drill 2022 as team BUET Fsociety&lt;/a&gt;&#xA; | &lt;a href=&#34;https://digibanglatech.news/english/91288/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;News Link&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Achieved 13th position in University Cyber Drill 2022 as team BUET Fsociety&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Achieved 6th position in National Cyber Drill 2021 as team Knight Squad&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/BUET.EDC/posts/pfbid0M45Cn7VBXb6JhhJvxdJ3XSigtW8gJHyg1LYZFQsQJLMHgBD3X7cKnDnVXXWDnjy5l&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Received a Military Appreciation Coin from the US Embassy Dhaka&lt;/a&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>https://fazledyn.github.io/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/cv/</guid>
-      <description>&lt;p&gt;My updated CV can be found &lt;a href=&#34;https://docs.google.com/document/d/1VfoVqina0UtBzSfK218HsiEqn0fAwdgcMastUvAB5i4/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;here&lt;/a&gt;&#xA;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Education</title>
-      <link>https://fazledyn.github.io/education/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/education/</guid>
-      <description>&lt;h2 id=&#34;bachelor-of-science-computer-science--engineering&#34;&gt;Bachelor of Science, Computer Science &amp;amp; Engineering&lt;/h2&gt;&#xA;&lt;h3 id=&#34;bangladesh-university-of-engineering--technology&#34;&gt;Bangladesh University of Engineering &amp;amp; Technology&lt;/h3&gt;&#xA;&lt;p&gt;April 2018 - May 2023&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;CGPA: 3.50 out of 4.00&lt;/strong&gt; (Final Year: 3.75)&lt;/p&gt;&#xA;&lt;p&gt;Notable Courses:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CSE 405 - Computer Security&lt;/li&gt;&#xA;&lt;li&gt;CSE 471 - Machine Learning&lt;/li&gt;&#xA;&lt;li&gt;CSE 461 - Algorithm Engineering&lt;/li&gt;&#xA;&lt;li&gt;CSE 423 - Fault Tolerant Systems&lt;/li&gt;&#xA;&lt;li&gt;CSE 321 - Computer Networks&lt;/li&gt;&#xA;&lt;li&gt;CSE 313 - Operating Systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Experience</title>
-      <link>https://fazledyn.github.io/experience/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/experience/</guid>
-      <description>&lt;h1 id=&#34;work&#34;&gt;Work&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;software-security-engineer&#34;&gt;Software Security Engineer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;openrefactory-inchttpsopenrefactorycom&#34;&gt;&lt;a href=&#34;https://openrefactory.com/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;OpenRefactory Inc.&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;July 2023 - Present (Full Time)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt; &lt;code&gt;Python&lt;/code&gt;, &lt;code&gt;ExpressJS&lt;/code&gt;, &lt;code&gt;Vite&lt;/code&gt;, &lt;code&gt;Docker&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt;, &lt;code&gt;MongoDB&lt;/code&gt;, &lt;code&gt;Bash&lt;/code&gt;, &lt;code&gt;Jenkins&lt;/code&gt;, &lt;code&gt;PostgreSQL&lt;/code&gt;, &lt;code&gt;Prisma&lt;/code&gt;, &lt;code&gt;GCP&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;fullstack-web-developer&#34;&gt;Fullstack Web Developer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mindshare-bangladeshhttpsmindshare-bdcom&#34;&gt;&lt;a href=&#34;https://mindshare-bd.com/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Mindshare Bangladesh&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;June 2021 - Nov 2021 (Contractual)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://fazledyn.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/projects/</guid>
-      <description>&lt;h1 id=&#34;work&#34;&gt;Work&lt;/h1&gt;&#xA;&lt;h2 id=&#34;finding--fixing-bugs-in-open-source-softwares&#34;&gt;Finding &amp;amp; Fixing Bugs in Open Source Softwares&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://openssf.org/blog/2023/12/05/finding-and-fixing-bugs-in-open-source-software-at-scale-with-a-grant-from-alpha-omega/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Blog Post by OpenSSF&lt;/a&gt;&#xA; | &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1K8dc6SrSEoqqh46cFisZM1tiN4CigaXsqkCKfCM8UTs/edit?gid=1270834270#gid=1270834270&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Google Sheet&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;As &lt;strong&gt;OpenRefactory&lt;/strong&gt;&amp;rsquo;s one of the software security engineers, I worked alongside &lt;strong&gt;OpenSSF&lt;/strong&gt;&amp;rsquo;s project &lt;a href=&#34;https://alpha-omega.dev/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Alpha-Omega&lt;/a&gt;&#xA; to find and fix vulnerabilities in popular open source projects in GitHub. Based on our findings, we created patches and fixed the bugs in the projects by collaborating with the project maintainers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Research</title>
-      <link>https://fazledyn.github.io/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/research/</guid>
-      <description>&lt;h2 id=&#34;interaction-and-nlp-based-sentiment-analysis-of-bangla-food-review-in-social-media&#34;&gt;Interaction and NLP Based Sentiment Analysis of Bangla Food Review in Social Media&lt;/h2&gt;&#xA;&lt;h3 id=&#34;undergraduate-thesis&#34;&gt;Undergraduate Thesis&lt;/h3&gt;&#xA;&lt;p&gt;Supervisor: Dr. Sadia Sharmin (BUET)&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/fazledyn/undergraduate-thesis&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;GitHub&lt;/a&gt;&#xA; | &lt;a href=&#34;https://docs.fazledyn.com/archive/Draft_ASONAM2023_Facebook_Bangla_Food_Review_Paper.pdf&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Draft Paper&lt;/a&gt;&#xA; | &lt;a href=&#34;https://github.com/fazledyn/undergraduate-thesis/blob/d5974e5954aeb8694a610e96700a40599d3c5f18/thesis-book/Interaction%20and%20Natural%20Language%20Processing%20Based%20Sentiment%20Analysis%20of%20Bangla%20Food%20Review%20in%20Social%20Media%20-%20UG%20Thesis.pdf&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener&#34;&gt;Thesis Book&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;In this study, we collected data from different Facebook pages to analyze the sentiment of social media users regarding food review. For this, we used reactions and comments to analyze the sentiment in two independent ways. This work was submitted to ASONAM 2023.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Skills</title>
-      <link>https://fazledyn.github.io/skills/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fazledyn.github.io/skills/</guid>
-      <description>&lt;h2 id=&#34;programming-languages-frameworks-databases&#34;&gt;Programming Languages, Frameworks, Databases&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Python&lt;/code&gt;, &lt;code&gt;JavaScript&lt;/code&gt;, &lt;code&gt;C/C++&lt;/code&gt;, &lt;code&gt;Java&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;ExpressJS&lt;/code&gt;, &lt;code&gt;Django&lt;/code&gt;, &lt;code&gt;Flask&lt;/code&gt;, &lt;code&gt;React&lt;/code&gt;, &lt;code&gt;NextJS&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;PostgreSQL&lt;/code&gt;, &lt;code&gt;MongoDB&lt;/code&gt;, &lt;code&gt;MySQL&lt;/code&gt;, &lt;code&gt;OracleDB&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;development--other-tools&#34;&gt;Development &amp;amp; Other Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Git&lt;/code&gt;, &lt;code&gt;Bash&lt;/code&gt;, &lt;code&gt;Docker&lt;/code&gt;, &lt;code&gt;Jenkins&lt;/code&gt;, &lt;code&gt;NGINX&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;security-tools&#34;&gt;Security Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;BurpSuite&lt;/code&gt;, &lt;code&gt;Wireshark&lt;/code&gt;, &lt;code&gt;Nmap&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dnSpy&lt;/code&gt;, &lt;code&gt;Ghidra&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;gobuster&lt;/code&gt;, &lt;code&gt;dirb&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;CodeQL&lt;/code&gt;, &lt;code&gt;Semgrep&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;machine-learning-libraries&#34;&gt;Machine Learning Libraries&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Tensorflow&lt;/code&gt;, &lt;code&gt;PyTorch&lt;/code&gt;, &lt;code&gt;Pandas&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

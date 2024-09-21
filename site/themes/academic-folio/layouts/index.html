@@ -21,7 +21,7 @@
             {{ if (strings.HasSuffix . ".svg") }}
                 <object data="{{ .RelPermalink }}" type="image/svg+xml" width="auto" height="auto" title="{{ .RelPermalink }}"></object>
             {{ else }}
-                {{ partial "img" (dict "img" . "class" "rounded" "alt" .RelPermalink) }}
+                <img src="{{.RelPermalink}}" height="{{.Height}}" width="{{.Width}}">
             {{ end }}
         {{ end }}
 

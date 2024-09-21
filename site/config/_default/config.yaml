@@ -14,7 +14,19 @@ enableRobotsTXT: true
 
 publishDir: "../docs/"
 
+# markup:
+#   goldmark:
+#     parser:
+#       wrapStandAloneImageWithinParagraph: false
+#       attribute:
+#         block: true
+
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      image: true
   highlight:
     guessSyntax: true
     style: dracula  # syntax highlighting style for markdown code blocks

@@ -1,34 +1,30 @@
 main:
-- name: About
-  url: /
-  weight: 1
-
 - name: Education
-  url: /education/
+  url: "#education"
   weight: 2
 
 - name: Research
-  url: /research/
+  url: "#research"
   weight: 3
 
 - name: Projects
-  url: /projects/
+  url: "#projects"
   weight: 4
 
-- name: Experience
-  url: /experience/
+- name: Work
+  url: "#work"
   weight: 5
 
 - name: Skills
-  url: /skills/
+  url: "#skills"
   weight: 6
 
 - name: Achievements
-  url: /achievements/
+  url: "#achievements"
   weight: 7
 
 - name: CV
-  url: /cv/
+  url: "#cv"
   weight: 8
 
 social:
